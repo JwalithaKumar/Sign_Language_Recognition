@@ -12,16 +12,15 @@ from tensorflow.keras.preprocessing import image
 
 @st.cache(allow_output_mutation=True)
 def loading_model():
-    fp = "./model/BrainTumorCheck.h5"
+    fp = "./action.h5.h5"
     model_loader = load_model(fp)
     return model_loader
 
 
 cnn = loading_model()
 st.write("""
-# Cloud Based Web Application Tuberculosis Detection Using CNN App
-Built by Jayes and Team
+# Online Sign Language Recognition
 """)
 
 
-temp = st.file_uploader("Please Provide the Snap Shot of your X-Ray Image")
+temp = st.file_uploader("Please Provide the Snap Shot of your Sign")
