@@ -12,7 +12,7 @@ from tensorflow.keras.preprocessing import image
 
 @st.cache(allow_output_mutation=True)
 def loading_model():
-    fp = "./action.h5.h5"
+    fp = "./action.h5"
     model_loader = load_model(fp)
     return model_loader
 
